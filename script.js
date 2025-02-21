@@ -17,9 +17,9 @@ function doProcessing() {
         alert("All digits in your entrie are the same.");
     }
     else if(digit1 === digit2 || digit1 === digit3 || digit2 === digit3)
-        {
-            alert("There are two same digits in your entrie.");
-        }
+    {
+        alert("There are two same digits in your entrie.");
+    }
     else
     {
         alert("There is no same digits in your entrie.")
