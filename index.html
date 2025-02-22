@@ -8,12 +8,47 @@
 <body>
     <h1>Home Work 4.3</h1>
     <form>
-        <input type="text" id="yearOfBirthValue" placeholder="Enter the year of your birth">
-        <input type="text" id="cityValue" placeholder="Enter the city you live in">
-        <input type="text" id="favSportValue" placeholder="Enter your favorite sport">
-        <button type="submit" onclick="doProcessing()">Go!</button>
+        <input type="number" id="yearOfBirthValue" placeholder="Enter the year of your birth">
+        <br>
+        <br>
+
+        <div name="cityContainer">
+            <label name="city">Select City: 
+            <select id="city">
+                <option value="unselected">No Selection</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="London">London</option>
+                <option value="Prague">Prague</option>
+                <option value="Brno">Brno</option>
+                <option value="Rome">Rome</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Milan">Milan</option>
+                <option value="Liverpool">Liverpool</option>
+            </select>
+            </label>
+        </div>
+        <br>
+        <br>
+        
+        <div name="sportContainer">
+            <label name="sport">Select favorite sport: 
+            <select id="sport">
+                <option value="unselected">No Selection</option>
+                <option value="Football">Football</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Racing">Racing</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Boxing">Boxing</option>
+            </select>
+            </label>
+        </div>
+        <br>
+        <br>
+        <button type="submit" onclick="doProcessing(event)">Go!</button>
     </form>
 
     <script src = "script.js"></script>
 </body>
 </html>
+
