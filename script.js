@@ -25,6 +25,6 @@ function arrayAverageNumCalculator()
 }
 
 
-var _someArray = [2, 12, 100, 'Alice', 'brown', true, 'Sam', false, 2002];
+var _someArray = [2, 12, 100, 'Alice', 'brown', true, 'Sam', false, 2002, 111, null];
 
 console.log(arrayAverageNumCalculator(_someArray));
