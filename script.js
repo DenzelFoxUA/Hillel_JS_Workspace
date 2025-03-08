@@ -21,3 +21,5 @@ let myFuncResult = sum(0);
 
 console.log(myFuncResult(2));
 console.log(myFuncResult(4));
+console.log(myFuncResult("notanum"));
+
