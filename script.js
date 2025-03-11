@@ -8,6 +8,7 @@ let ladder = {
         {
             this.current_position++;
         }
+        return this;
         
     },
     down(numOfSteps = 1){
@@ -20,9 +21,11 @@ let ladder = {
             }
             this.current_position--;
         }
+        return this;
     },
     showCurrent(){
         console.log(`Current position: ${this.current_position}`);
+        return this;
     }
 }
 
@@ -44,3 +47,7 @@ ladder.showCurrent();
 ladder.down(11);
 
 ladder.showCurrent();
+
+console.log("Second task i forgot to implement");
+
+ladder.up(2).up(2).down(1).showCurrent();
