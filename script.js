@@ -1,37 +1,42 @@
-function Person(name, lastName, age)
+
+
+function User(name, lastName, age, country, city, street)
 {
-    if(name !== null && lastName !== null 
-        && typeof name === 'string' 
-        && typeof lastName === 'string'
-        && typeof age === 'number')
+
+    if(typeof name === 'string' && typeof lastName === 'string'
+        && typeof age === 'number' && typeof country === 'string'
+        && typeof country === 'string' && typeof city === 'string'
+        && typeof street === 'string'
+    )
     {
-            this._name = name;
-            this._lastName = lastName;
-            this._age = age;
-    }
-    else
-    {
-        this._name = null;
-        this._lastName = null;
-        this._age = null;
+        this._name = name;
+        this._lastName = lastName;
+    
+        this._address =
+        [
+            this._country = country,
+            this._city = city,
+            this._street = street
+        ];
+        this._age = age;
     }
 
-    this.showInfo = () => {
-        console.log(`name: ${this._name} \nlast name: ${this._lastName} \nage: ${this._age}`);
-        return this;
-    
+    this.showInfo = function() {
+        console.log(`\tName: ${this._name}
+        LastName: ${this._lastName}
+        Age: ${this._age}
+        Address: ${this._address}`);
+    }
+
+    this.getInfo = function() {
+        return [this._name, this._lastName, this._age, this._country, this._street];
     }
 }
 
+let user1 = new User("Bill","Murray",60, "USA", "Los-Angeles", "Stars blvd");
 
-let first = new Person("Bill", "Murray", 63);
+user1.showInfo();
 
-const firstCopy = {...first};
+let _data = user1.getInfo();
 
-first.showInfo();
-firstCopy.showInfo();
-
-first._lastName = "Mitchell";
-
-first.showInfo();
-firstCopy.showInfo();
+console.log(_data);
