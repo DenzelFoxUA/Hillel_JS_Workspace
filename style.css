@@ -1,0 +1,26 @@
+#scrollerBtn 
+{
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    background-color: #008000;
+    border-radius: 8px;
+    box-shadow: #0000 1px 1px 10px;
+    font-size: 24px;  
+    margin-bottom: 50px;
+}
+
+.imageContainer{
+    display: grid;
+    grid-template-columns: 1fr, 4fr, 1fr;
+    align-items: center;
+    
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-rows: 300px, auto;
+    align-items: center;
+    justify-content: center;
+    
+}
