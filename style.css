@@ -1,0 +1,28 @@
+.textStandart {
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+}
+
+.textCustom {
+    font-size: 32px;
+    color: #fff;
+    background-color: #008000;
+    border-radius: 6px;
+}
+
+.bigButton {
+    font-size: 32px;
+    width: 200px;
+    height: 100px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #ff000f;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-rows: 200px, 200px, auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
