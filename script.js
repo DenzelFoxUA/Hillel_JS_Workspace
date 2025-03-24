@@ -38,7 +38,11 @@ redirectButton.addEventListener("click", (e) => {
         
     }
     else
+    {
         window.location.href = myUrl;
+    }
+    
+     e.stopPropagation();
         
 })
 
