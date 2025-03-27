@@ -6,7 +6,70 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Test1: type "input"</h1>
+    <h3>Changes output in a real time</h3>
+    <input id="testInput" placeholder="put some text here">
+    <br>
+    <h1>Test2: type "change"</h1>
+    <h3>Changes output by pressing Enter</h3>
+    <input id="testInput2" placeholder="put some text here">
+    <br>
+    <h1>Test3: type "focus"</h1>
+    <h3>Changes output by aming with cursor</h3>
+    <input id="testInput3" placeholder="put some text here">
+    <br>
+    <h1>Test4: type "blur"</h1>
+    <h3>Changes output if you dont enter any value</h3>
+    <input id="testInput4" placeholder="put some text here">
+    <br>
+    <h1>Test5: type "keyUp"</h1>
+    <h3>Shows name of the key pressed</h3>
+    <input id="testInput5" placeholder="put some text here">
+    <br>
+    <br>
     
+    <h1 id="outputBlock"></h1>
+    <br>
+    <br>
+
+    <h1>Test6: checkbox</h1>
+    <h3>Shows if checked</h3>
+    <input type="checkbox" id="testInput6" placeholder="check">
+    <br>
+    <h1>Test7:Range Bar</h1>
+    <h3>Shows %</h3>
+    <input type="range" id="testInput7" placeholder="check">
+    <br>
+
+    <h1 id="outputBlock2"></h1>
+    <br>
+    <br>
+
+    <h1>Test7: checkbox</h1>
+    <h3>Shows if checked</h3>
+    <select id="selectTest">
+        <option value="One">One</option>
+        <option value="Two">Two</option>
+        <option value="Three">Tree</option>
+    </select>
+
+    <h1 id="outputBlock3"></h1>
+    <br>
+    <br>
+    
+    <h1>Form</h1>
+    <form id="testForm">
+
+        <input id="name" type="text" placeholder="Name">
+        <input id="lastName" type="text" placeholder="LastName">
+
+        <button type="submit" it="submitBtn">Done!</button>
+    </form>
+
+    <div id="formOutput">
+    </div>
+
+
     <script src = "script.js"></script>
 </body>
 </html>
