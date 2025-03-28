@@ -2,11 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="mainContainer">
+        <form id="credsForm">
+            <h1 class="headerText">We would like to help you!<h1>
+            
+            <label>Name:
+                <input class="inputBox" id="inputName" type="text" placeholder="Enter your name...">
+                <div id="err-name" class="err">*Name is required!</div>
+            </label>
+            <br>
+            <label>Surname:
+                <input class="inputBox" id="inputLastName" type="text" placeholder="Enter your surname...">
+                <div id="err-lastName" class="err">*Surname is required!</div>
+            </label>
+            <br>
+
+            <h3 id="question">How to answer you?</h3>
+            <label>Phone:
+                <input class="inputBox" id="inputPhone" type="text" placeholder="Enter your phone...">
+                <div id="err-phone" class="err">Phone format error!</div>
+                <br>
+            </label>
+            <label>Email:
+                <input class="inputBox" id="inputEmail" type="text" placeholder="Enter your email...">
+                <div id="err-email" class="err">Email format error!</div>
+            </label>
+            <br>
+            <button id="sendBtn" type="submit">Send Message</button>
+        </form>
+    </div>
     <script src = "script.js"></script>
 </body>
 </html>
