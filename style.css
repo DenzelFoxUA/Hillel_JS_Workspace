@@ -1,0 +1,39 @@
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.myBtn {
+    font-size: 16px;
+    color:#fff;
+    background-color:#0000ff;
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+}
+
+.dot {
+    margin: 7px 7px;
+    height: 12px;
+    width: 12px;
+    background-color: #7474d1;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #0000ff;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+    justify-items: center;
+}
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+}
