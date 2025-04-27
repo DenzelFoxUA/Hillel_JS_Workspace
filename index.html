@@ -1,12 +1,26 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src = "script.js"></script>
+<div class="container">
+    <h1 class="mainTitle">P O S T S</h1>
+    <form class="postForm" id="leaveAComment">
+        <h2>Leave a comment</h2>
+        <input id="titleInput" type="text" placeholder="Title..." required>
+        <textarea id="bodyInput" type="text" placeholder="Text..." required></textarea>
+        <button type="submit" id="confirmBtn">Done.</button>
+    </form>
+    <div id="result"></div>
+
+    <ul id="postList">
+
+    </ul>
+</div>
+<script type="module" src="./mainPosts.js"></script>
 </body>
 </html>
